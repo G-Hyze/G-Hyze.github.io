@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<title>Spine Widget</title>
+	<script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
+
+	<style type="text/css">body, html {margin: 0; background: transparent;}</style>
+</head>
+
+
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 
-<script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
-
-<div id="player-container" style="width: 100%; height: 100vh;"></div>
-
 <script>
 new spine.SpinePlayer("player-container", {
-	skeleton: "../assets/agent1.json",
-	atlas: "../assets/agent1.atlas",
+	skeleton: "assets/agent1.json",
+	atlas: "assets/agent1.atlas",
 	animation: "idle"
 });
 </script>
